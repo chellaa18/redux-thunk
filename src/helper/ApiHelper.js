@@ -10,13 +10,11 @@ let url;
 switch (process.env.NODE_ENV) {
   case "development":
    
+ url = 'https://dummyjson.com';
+    break;
 
-    break;
-  case "devel":
- 
-    break;
   default:
- 
+  url = 'https://dummyjson.com';
     break;
 }
 
