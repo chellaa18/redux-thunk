@@ -9,17 +9,14 @@ let cancelToken;
 let url;
 switch (process.env.NODE_ENV) {
   case "development":
-    // url = "http://172.16.16.179:4521/v1";
-    // url = "http://172.16.16.192:4521/v1";
-    url = "https://mywig_back.osiztech.com/v1";
+   
 
     break;
   case "devel":
-    // url = "http://172.16.16.192:4521/v1";
-    url = "https://mywig_back.osiztech.com/v1";
+ 
     break;
   default:
-    url = "https://mywig_back.osiztech.com/v1";
+ 
     break;
 }
 
