@@ -10,7 +10,7 @@ export const UserService = {
 
 async function HomeTime(data) {
     try {
-        const api = await apiHelper.getRequest(`user/distribution`, data)
+        const api = await apiHelper.getRequest(`products/1`, data)
         return api
     } catch (e) {
         console.error(e)
@@ -21,7 +21,7 @@ async function HomeTime(data) {
 
 async function GetCmsData(data) {
     try {
-        const api = await apiHelper.postRequest(`auth/get-cms`, data)
+        const api = await apiHelper.postRequest(`products`, data)
         return api
     } catch (e) {
         console.error(e)
